@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
+
+
+<body>
+    <div class="selection:bg-blue-400/10 flex font-[Inter] justify-center items-center h-screen bg-neutral-800">
+
+        <div class="justify-center size-96 bg-neutral-300/10 rounded-xl border border-1 border-neutral-400/20 shadow-xl ">
+
+            <div class="flex justify-center px-4 pt-8 *:mx-1">
+
+                <input type="text"
+                    id="userWeather"
+                    class="text-white bg-neutral-100/10 rounded-sm w-64 h-8 px-2 outline-none caret-neutral-100/70 text-white/70 placeholder:text-[16px] font-light antialiased tracking-wide font-stretch-condensed"
+                    placeholder="Enter city">
+
+                <button
+                    id="getButton"
+                    class="flex justify-center items-center font-[16px] text-white/80 border border-neutral-400/20 bg-neutral-400/20 cursor-pointer h-8 w-8 rounded-sm hover:bg-neutral-400/50 transition duration-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-check-icon lucide-check">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                </button>
+
+            </div>
+
+
+            <div class="px-12 py-7">
+                <h3 id="cityName" class="text-white/60 text-[16px] text-light"></h3>
+                <h1  class="text-[48px] text-white/60"><span id="currentTemp"></span>°<span class="text-[32px]">C</span></h1>
+
+                <div class="flex h-32 bg-neutral-500/10 rounded-sm border border-neutral-500/10" id="forecast">
+                    <!-- <div class="flex flex-col w-1/4 items-center justify-around text-white/40 text-[16px]">
+                        <span id="time">12 PM</span>
+                        <span id="icon">
+                            
+                        </span>
+                        <span id="temp">43</span>
+                    </div> -->
+                </div>
+
+
+                <div class="flex text-white/70 font-light text-[16px] justify-between py-3">
+                    <p id="sunrise">Sunrise: </p>
+                    <p id="sunset">Sunset: </p>
+
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
