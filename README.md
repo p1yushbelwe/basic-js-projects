@@ -3,6 +3,7 @@ Archive of simple and basic javascript projects including:
 1. Todo app with local storage
 2. Weather app with openweather and open-meteo API
 3. Ecommerce app with cart 
+4. Expense Tracker
 ___
 
 > This is an archived repository and is not open to any contributions 
