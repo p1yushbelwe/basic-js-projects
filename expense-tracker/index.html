@@ -5,8 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>    
-    
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+    .fade-out {
+      opacity: 0;
+      /* transform: translateX(50px); */
+      transition: opacity 0.2s ease;
+    }
+  </style>
+
+  <body>
+    <div
+      class="font-[Inter] flex justify-center items-center bg-neutral-950/90 h-screen selection:bg-rose-700"
+    >
+      <div class="bg-neutral-950/70 size-96 rounded-md shadow-lg px-10 py-4">
+        <div class="flex flex-col *:my-[8px] items-center h-1/2">
+          <h1
+            class="text-white/90 text-[20px] text-center font-medium tracking-tight"
+          >
+            Add Expense
+          </h1>
+          <input
+            type="text"
+            id="expense-name"
+            class="w-3/4 text-[16px] bg-neutral-900/90 rounded-sm px-2 py-1 text-white/90 placeholder:text-white/70 font-light placeholder:tracking-wide outline outline-2 outline-neutral-800"
+            placeholder="Expense name"
+          />
+          <input
+            type="text"
+            id="expense-amount"
+            class="w-3/4 text-[16px] bg-neutral-900/90 rounded-sm px-2 py-1 text-white/90 placeholder:text-white/70 font-light placeholder:tracking-wide outline outline-2 outline-neutral-800"
+            placeholder="Amount"
+          />
+          <button
+            id="add-expense-button"
+            class="bg-neutral-800/40 text-white/75 text-[16px] border-1 border-white/40 px-2 rounded-sm cursor-pointer hover:bg-neutral-800/70 transition duration-100 tracking-normal font-light"
+          >
+            Add Expense
+          </button>
+        </div>
+        <h1 class="text-white/90 text-[18px] font-light tracking-wide">
+          Expenses:
+        </h1>
+        <div class="h-1/2">
+          <div class="*:my-1" id="display-expense">
+            <!-- <li class="flex items-start justify-between bg-neutral-900 rounded-sm px-2 py-1">
+                        <span class="text-white/90 text-[16px] ">Laptop</span>
+                        <div class="flex">
+                            <span class="text-white/90 text-[16px] ">100Rs&nbsp;</span>
+                            <button class="text-rose-800 font-bold cursor-pointer hover:bg-neutral-800 px-1 rounded-xl transition duration-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="#fe3939" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
+                                    <path d="M18 6 6 18" />
+                                    <path d="m6 6 12 12" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </li> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="app.js"></script>
 </html>
