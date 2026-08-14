@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+    .fade-out {
+      opacity: 0;
+      /* transform: translateX(50px); */
+      transition: opacity 0.2s ease;
+    }
+  </style>
+
+  <body>
+    <div
+      class="selection:bg-rose-700 font-[Inter] flex justify-center items-center bg-neutral-900/90 h-screen"
+    >
+      <div class="bg-neutral-950/60 rounded-sm shadow-xl px-8 py-4">
+        <h1 class="text-center text-white/90 text-[20px] font-normal">
+          Quiz App
+        </h1>
+        <div
+          id="quiz-container"
+          class="flex flex-col justify-between mx-auto my-2 border border-2 border-neutral-400/40 size-70 rounded-sm px-2 py-2"
+        >
+          <div class="h-full flex justify-center items-center">
+            <h1 id="question-container" class="text-white text-center">How many elements in a.</h1>
+          </div>
+          <div
+            id="button-container"
+            class="text-white flex flex-col justify-end *:my-1 *:border-2 *:bg-indigo-800/10 *:border-indigo-800/80 *:rounded-sm *:text-[16px] *:font-normal *:py-1 *:hover:bg-indigo-800/95 *:cursor-pointer *:transition *:duration-100"
+          >
+            <button>Option 1:</button>
+            <button>Option 1:</button>
+            <button>Option 1:</button>
+            <button>Option 1:</button>
+          </div>
+        </div>
+        <div
+          class="my-3 flex justify-between w-70 mx-auto *:hover:bg-green-400/60 *:transition *:duration-100"
+        >
+          <button
+            id="prev-button"
+            class="px-4 cursor-pointer text-[16px] border-white/75 text-center text-white rounded-xs bg-green-400/75"
+          >
+            Prev
+          </button>
+          <button
+            id="next-button"
+            class="px-4 cursor-pointer text-[16px] border-white/75 text-center text-white rounded-xs bg-green-400/75"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
