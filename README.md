@@ -4,6 +4,7 @@ Archive of simple and basic javascript projects including:
 2. Weather app with openweather and open-meteo API
 3. Ecommerce app with cart 
 4. Expense Tracker
+5. Quiz with local storage 
 ___
 
 > This is an archived repository and is not open to any contributions 
