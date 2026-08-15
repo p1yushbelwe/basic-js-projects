@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
           button.classList.remove("!bg-indigo-800");
           userAnswers[data.id - 1] = "";
+          saveLocal()
           return;
         } else {
         }
